@@ -1,0 +1,13 @@
+on: [push]
+
+jobs:
+  docker_runner_job:
+    runs-on: alpine3.10
+    name: A job to run the dockerfile
+    steps:
+      # To use this repository's private action,
+      # you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: run the docker step
+        uses: ./.guthub/actions/docker_action.yml

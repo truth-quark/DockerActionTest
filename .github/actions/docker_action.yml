@@ -1,0 +1,7 @@
+# action YAML
+name: 'Docker Runner'
+description: 'Run the Dockerfile from an action/workflow'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+ 
