@@ -10,4 +10,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: run the docker step
-        uses: .
+        uses: ./github/actions/action-a.yaml
