@@ -1,9 +1,9 @@
+name: A job to run the dockerfile
 on: [push]
 
 jobs:
   docker_runner_job:
     runs-on: ubuntu-20.04
-    name: A job to run the dockerfile
     steps:
       # To use this repository's private action,
       # you must check out the repository
